@@ -1,0 +1,206 @@
+p{
+    font-family: 'Open Sans';
+    font-size: 14pt;
+    color:#E1E1E1; 
+}
+
+.mashup-container {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+.mashup-body {
+    min-width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+    width: fit-content;
+}
+
+/* Links (anchor) inside mashup-body */
+.mashup-body a:link {
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+.mashup-body a:visited {
+    text-decoration: none;
+    color: #ffffff;
+}
+  
+.mashup-body a:hover {
+    text-decoration: underline;
+    color:white;
+}
+  
+.mashup-body a:active {
+    text-decoration: underline;
+    color:white;
+}
+/*  */
+
+.mashup-content {
+    padding-left: 50px;
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+}
+
+.element-container{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    position: relative;
+
+    background-color: #212121;
+    border-radius: 2px;
+    margin: 3px;
+
+    box-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.default-text-page{
+    height: 100%;
+    width: 100%;
+    padding: 30px 100px 50px 100px;
+
+    display: block;
+
+    font-family: 'Open Sans';
+    font-size: 14pt;
+    color:#E1E1E1; 
+}
+
+/* Fade in animation for TITLES */
+.fade-in-title {
+    top: 10%; right: 50%;
+    transform: translate(35vw,0%);
+    
+	display: inline-block;
+	white-space: nowrap;
+    animation: showup 1.5s; 
+}
+
+@keyframes showup {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes showupslow {
+	0% {
+		opacity: 0;
+	}
+
+	30% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Fade in animation for CONTENT */
+.fade-in-content {
+    width: 100%;
+    line-height: 1.5;
+	display: inline-block;
+    animation: showupslow 1.5s; 
+}
+
+/* Text display format for pure text pages */
+.text-page-contents{
+    height: fit-content;
+    padding: 10px;
+    display: flexbox;
+
+    font-family: 'Open Sans';
+    font-size: 14pt;
+    color:#c0c0c0; 
+}
+
+/* LANDING PAGE CARDS */
+.landing-page-cards-container{
+    width: fit-content;
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+}
+
+.landing-page-cards{
+    min-width: 200px;
+    max-width: 19%;
+    width: 19%;
+    height: 100%;
+    border-radius: 2px;
+    background-color: #1D1D1D;
+    padding: 15px;
+    margin: 5px;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.1);
+	overflow: hidden;
+    text-align: center;
+}
+
+.landing-page-cards:hover{
+    transform: translate(0px, -15px);
+    transition: .2s ease-in-out;
+
+}
+
+.landing-page-cards-header{
+    color: #43A6F2;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    font-size: 22pt;
+}
+
+.landing-page-cards-content{
+    position: relative;
+    top: 10%;
+}
+
+.sales-map{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+
+/* KPIS Styles */
+.kpi-card-container{
+    height: 100%;
+    width: 100%;
+}
+
+p.kpi-card-title{
+    width: fit-content;
+    position: absolute;
+    top: 15%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    font-weight: bold;
+    font-size: 28pt;
+}
+
+p.kpi-card-content{
+    width: fit-content;
+    position: absolute;
+    top: 50%;  
+    left: 50%; 
+    transform: translate(-50%, -50%);
+
+    font-size: 24pt;
+}
+
+/* */
+

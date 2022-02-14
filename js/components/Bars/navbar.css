@@ -1,0 +1,79 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --header-height: 40px;
+  --navbar-right-panel-size: 400px;
+}
+
+.fa-bars{
+    height: 30px;
+}
+
+.fa-times-circle{
+    height: 30px;
+}
+
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #212121;
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, .4);
+  height: var(--header-height);
+  width: 100%;
+  z-index: 1001;
+}
+
+.menu-icon-btn {
+    position: fixed;
+  background: none;
+  left: calc(100vw - 50px);
+  height: var(--header-height);
+  border: none;
+  padding: 0;
+}
+
+.menu-icon {
+  width: 25px;
+  height: 25px;
+  cursor: pointer !important;
+}
+
+.navbar-menu {
+    position: absolute;
+    top: var(--header-height);
+    right: 400px;
+	width: 0px;
+    height: calc(100vh - var(--header-height)); /* Experiment with starting height! */
+    /* height: 0px; */
+    background-color: #212121;
+    overflow: hidden;
+
+    transition: all 0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+}
+
+/* Once opened, menu bar should transition to this v */
+.navbar-menu.transition { 
+    padding: 10px;
+    right: 0px;
+    background-color: #212121;
+    width: var(--navbar-right-panel-size);
+    height: calc(100vh - var(--header-height));
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, .4);
+}
+
+.navbar-mask {
+    position: absolute;
+    top: 40px;
+    left: calc(250px);
+	width: calc(100vw - 250px - var(--navbar-right-panel-size));
+    height: calc(100vh - var(--header-height));
+    background-color: transparent;
+}
+
+
+
+
+

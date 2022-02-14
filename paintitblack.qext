@@ -1,0 +1,12 @@
+{
+    "type": "mashup",
+    "name": "Paint It Black! Mashup Template",
+    "description": "A dark themed dashboard template built with ReactJS",
+    "version": "1.0.0",
+    "author": "Fellipe Domingues Fernandes (BIX Tecnologia)",
+    "keywords": "qlik-sense, visualization, mashup",
+    "preview": "img/bix_logo.png",
+    "dependencies": {
+        "qlik-sense": ">=3.0.x"
+	 }
+}
