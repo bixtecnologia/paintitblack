@@ -18,6 +18,9 @@ This covers the install procedures of the mashup as-is, i.e. while using the two
 4. Import the mashup to your server via the QMC.
 5. Open the mashup via Dev-Hub or via your server's URL, with path `yourserver.xxx/extensions/PaintItBlack/index.html`
 
+# 📷 Preview
+![Dashboard preview](https://i.imgur.com/IGNRD3K.png)
+
 # 🗨️ Contact Info
 
 Find us through the project's developer on [GitHub](https://github.com/BeautyFades) or on [LinkedIn](https://www.linkedin.com/in/fellipe-fernandes/). For business inquiries please contact BIX Tecnologia on [our website](https://www.bixtecnologia.com/us/).
