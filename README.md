@@ -14,7 +14,7 @@ This covers the install procedures of the mashup as-is, i.e. while using the two
 ## Installing on a QlikSense Enterprise production server
 1. Download this repository, open the `config.js` file and switch environments from 'DEV' to 'PRD'.
 2. Import the [Consumer Sales](https://demos.qlik.com/qliksense/ConsumerGoodsSales) and [Insurance Claims](https://demos.qlik.com/qliksense/InsuranceClaims) applications to the server via QMC.
-3. Again in config.js, under the prdQvfNames configuration, put the Consumer Sales and Insurance Claims application IDs as they are saved in your server.
+3. Again in `config.js`, under the _prdQvfNames_ configuration, put the Consumer Sales and Insurance Claims application IDs as they are saved in your server.
 4. Import the mashup to your server via the QMC.
 5. Open the mashup via Dev-Hub or via your server's URL, with path `yourserver.xxx/extensions/PaintItBlack/index.html`
 
